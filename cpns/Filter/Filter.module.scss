@@ -1,0 +1,53 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  flex: auto;
+  position: relative;
+  input {
+    box-sizing: border-box;
+    height: 34px;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+    flex: auto;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    padding: 0 16px;
+  }
+  select {
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 34px;
+    flex: auto;
+    width: 90%;
+    padding: 0 16px;
+    outline: none;
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+  }
+  .icon {
+    position: absolute;
+    right: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    input {
+      flex: auto;
+    }
+    select {
+      flex: auto;
+    }
+    .icon {
+      display: none;
+    }
+  }
+}
